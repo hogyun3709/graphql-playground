@@ -9,12 +9,12 @@ const client = new ApolloClient({
 
 function App() {
   return (
-    <ApolloClient client={client}>
+    <ApolloProvider client={client}>
       <div className="container">
         <img src={logo} alt="SpaceX" style={{ width: 300, display: 'block', margin: 'auto'}}/>
         <Launches/>
       </div>
-    </ApolloClient>
+    </ApolloProvider>
 
   );
 }
